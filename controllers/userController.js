@@ -1,5 +1,5 @@
 const userModel = require('../models/userModel');
-const bcrypt = require("bcrypt");
+const bcrypt = require("bcryptjs");
 
 function getAllUsers(req, res) {
   userModel.getAllUsers((err, users) => {
